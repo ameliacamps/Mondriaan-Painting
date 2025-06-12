@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Composition with Red, Blue and Yellow by Piet Mondriaan</title>
+  <style>
+    .container{
+      display: grid;
+      grid-template-rows: repeat(8, 1fr);
+      grid-template-columns: repeat(8, 1fr);
+      gap: 9px;
+
+      height: 170px;
+      width: 170px;
+      background-color: #232629;
+    }
+
+    .white{
+      background-color: #EAEAEA;
+    }
+
+    .red{
+      background-color: #E3D2C3;
+      grid-column: 3/9;
+      grid-row: 1/7;
+    }
+
+    .yellow{
+      background-color: #66D2CE;
+    }
+
+    #one{
+      grid-column: span 2;
+      grid-row: span 3;
+    }
+
+    #two{
+    grid-column: span 2;
+    grid-row: span 3;
+    }
+
+    .blue{
+      background-color: #2DAA9E;
+      grid-column: span 2;
+      grid-row: span 2;
+    }
+
+    #three{
+      grid-column: span 5;
+      grid-row: span 2;
+    }
+   
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="white" id="one"></div>
+    <div class="red"></div>
+    <div class="white" id="two"></div>
+    <div class="blue"></div>
+    <div class="white" id="three"></div>
+    <div class="white" id="four"></div>
+    <div class="yellow"></div>
+  </div>
+
+</body>
+
+</html>
